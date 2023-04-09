@@ -19,6 +19,10 @@ body {
     --primary: #581B98;
 }
 
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+    margin-top: 39px;
+}
 /* CHATBOX
 =============== */
 .chatbox {
