@@ -36,7 +36,9 @@ all_words = sorted(set(all_words))
 tags = sorted(set(tags))
 
 print(len(xy), "patterns")
-print(len(tags), "tags:", tags)
+print(' ')
+print(len(tags), "tags: ", tags)
+print('')
 print(len(all_words), "unique stemmed words:", all_words)
 
 # create training data
@@ -60,7 +62,8 @@ learning_rate = 0.001
 input_size = len(X_train[0])
 hidden_size = 8
 output_size = len(tags)
-print(input_size, output_size)
+print('Input Size: ',input_size)
+print('Output Size: ',output_size)
 
 class ChatDataset(Dataset):
 
