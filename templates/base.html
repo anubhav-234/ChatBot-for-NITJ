@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="icon" type="image/x-icon" href="static/images/nitj.ico" />
+  <link rel="icon" type="image/x-icon" href="static/images/chatbot.ico" />
   
   <head>
       <meta charset="UTF-8" />
@@ -11,13 +11,16 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <title>Chatbot</title>
+    <title>Welcome to NITJ - Chatbot</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="static/images/nitj.ico" height="40" width="40" alt="">
+      </a>
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Chatbot</a>
+        <a class="navbar-brand" href="#">NITJ Chatbot</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,7 +40,7 @@
       </div>
     </nav>
     <!-- Welcome to Chatbot  -->
-    <img id="welcomeImageId" src="static/images/welcome.jpg" class="img-fluid" alt="Welcome to Chantbot Application"">
+    <img id="welcomeImageId" src="static/images/welcome-2.jpg" class="img-fluid" alt="Welcome to Chantbot Application"">
     <!-- Some Abstract about NITJ -->
     <div class="container border border-dark">
       <h2><span class="badge bg-primary">About NITJ Chatbot</span></h2>
@@ -55,7 +58,6 @@
           There is a files named <strong>'intents.json</strong> which stores the
           dataset required for its model traning.
           <a
-            style="text-decoration: none"
             target="_blank"
             href="https://github.com/anubhav-234/ChatBot-for-NITJ/blob/main/intents.json"
             >See Sample json file here...</a
@@ -79,98 +81,16 @@
         </li>
         <li>
           Link for the github repository:
-          <a href="https://github.com/anubhav-234/ChatBot-for-NITJ"
-            >Github Repom Link</a
+          <a 
+          target="_blank"
+          href="https://github.com/anubhav-234/ChatBot-for-NITJ"
+            >Github Repository Link</a
           >
         </li>
       </ul>
     </div>
-    <div class="container border border-dark my-2px" >
-      <h2><span class="badge bg-primary"> Information Available on Chatbot :- </span></h2>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne"
-                aria-expanded="false"
-                aria-controls="flush-collapseOne"
-              >
-                Accordion Item #1
-              </button>
-            </h2>
-            <div
-              id="flush-collapseOne"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                first item's accordion body.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
-                aria-expanded="false"
-                aria-controls="flush-collapseTwo"
-              >
-                Accordion Item #2
-              </button>
-            </h2>
-            <div
-              id="flush-collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                second item's accordion body. Let's imagine this being filled with
-                some actual content.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree"
-                aria-expanded="false"
-                aria-controls="flush-collapseThree"
-              >
-                Accordion Item #3
-              </button>
-            </h2>
-            <div
-              id="flush-collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionFlushExample"
-            >
-              <div class="accordion-body">
-                Placeholder content for this accordion, which is intended to
-                demonstrate the <code>.accordion-flush</code> class. This is the
-                third item's accordion body. Nothing more exciting happening here in
-                terms of content, but just filling up the space to make it look, at
-                least at first glance, a bit more representative of how this would
-                look in a real-world application.
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
 
-    <div class="container">
+    <div class="container containerIcon">
       <div class="chatbox">
         <div class="chatbox__support">
           <div class="chatbox__header">
@@ -181,9 +101,9 @@
               />
             </div>
             <div class="chatbox__content--header">
-              <h4 class="chatbox__heading--header">Chat support</h4>
+              <h4 class="chatbox__heading--header">NITJ Chat support</h4>
               <p class="chatbox__description--header">
-                Hi. My name is Sam. How can I help you?
+                Hi. My name is NitChat. How can I help you?
               </p>
             </div>
           </div>
@@ -192,7 +112,7 @@
           </div>
           <div class="chatbox__footer">
             <input type="text" placeholder="Write a message..." />
-            <button class="chatbox__send--footer send__button">Send</button>
+            <button class=" btn btn-primary chatbox__send--footer send__button">Send</button>
           </div>
         </div>
         <div class="chatbox__button">

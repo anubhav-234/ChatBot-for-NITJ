@@ -41,12 +41,15 @@ def get_response(msg):
 
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
-    if prob.item() > 0.60:
-        for intent in intents['intents']:
-            if tag == intent["tag"]:
-                return random.choice(intent['responses'])
+    if prob.item() <= 0.80:
+        print('This is me')
+        tag = 'default-fallback'
+
+    for intent in intents['intents']:
+        if tag == intent["tag"]:
+            return random.choice(intent['responses'])
     
-    return "I do not understand..."
+    return 'I dont understand...'
 
 
 if __name__ == "__main__":
